@@ -1,5 +1,5 @@
 # 版本信息
-FROM java8
+FROM java
 
 # 添加发布文件到容器目录
 RUN mkdir -p /usr/eoms
