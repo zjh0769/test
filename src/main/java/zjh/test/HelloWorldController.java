@@ -15,7 +15,7 @@ public class HelloWorldController {
 		try {
 			
 			while (true) {
-				HttpRequest.sendGet("server2:8080/hello2", null);
+				HttpRequest.sendGet("http://server2:8080/hello2", null);
 		
 			}
 		} catch (Exception e) {
