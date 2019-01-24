@@ -13,10 +13,9 @@ public class HelloWorldController {
 	@RequestMapping("/call")
 	public void call() {
 		try {
-			
 			while (true) {
 				HttpRequest.sendGet("http://server2:8080/hello2", null);
-		
+				Thread.sleep(5000);
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
