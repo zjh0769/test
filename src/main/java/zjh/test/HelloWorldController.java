@@ -13,10 +13,10 @@ public class HelloWorldController {
 	@RequestMapping("/call")
 	public void call() {
 		try {
-			int i = 10000;
-			while (i < 0) {
+			
+			while (true) {
 				HttpRequest.sendGet("server2:8080/hello2", null);
-				i--;
+		
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
